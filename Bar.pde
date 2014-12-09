@@ -14,11 +14,12 @@ class Bar {
     this.force = new PVector();
     this.i = i;
   }
-  // class methods
   
+  
+  // class methods
   void bop(float dif) {
     float d = map(dif, 0, 100, 0, 5);
-    this.velocity.add(float(0), -d, float(0));
+    this.velocity.add(0.0, -d, 0.0);
   }
   
   void update() {
