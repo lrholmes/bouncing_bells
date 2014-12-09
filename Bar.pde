@@ -30,20 +30,13 @@ class Bar {
   }
   
   void bounce() {
-  if (position.x > width-2) {
-    position.x = width-2;
-    velocity.x = -velocity.x;
-  } else if (position.x < 2) {
-    position.x = 2;
-    velocity.x = -velocity.x;
-  }
-  if (position.y > height-2) {
-    position.y = height-2;
-    velocity.y = -velocity.y;
-  } else if (position.y < 2) {
-    position.y = 2;
-    velocity.y = -velocity.y;
-  }
+    if (position.y > height-2) {
+      position.y = height-2;
+      velocity.y = -velocity.y;
+    } else if (position.y < 0) {
+      position.y = 0;
+      velocity.y = -velocity.y;
+    }
 }
   
   void display() {
