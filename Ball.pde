@@ -67,10 +67,13 @@ class Ball {
     bounce();
     
     fill(c, brightness);
-    triangle((origPosition.x-(scale/2)),position.y,(origPosition.x+(scale/2)),position.y,map(position.x,0,width,width*0.33,width*0.66),height*0.66);
+    //triangle((origPosition.x-(scale/2)),position.y,(origPosition.x+(scale/2)),position.y,map(position.x,0,width,width*0.33,width*0.66),height*0.66);
     
     fill(c, brightness*2);
-    ellipse(position.x,position.y, scale, scale);
+    //ellipse(position.x,position.y, scale, scale);
+    textSize(36);
+    //textFont(roboto);
+    text(msg.charAt(i%(msg.length())), position.x,position.y);
     // add triangles which go from bottom to center, light up upon bounce
     //println(position.y);
   }
